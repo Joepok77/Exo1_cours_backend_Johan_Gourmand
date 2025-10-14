@@ -1,0 +1,3 @@
+# ToDoList CLI - Dépendances Python
+# Aucune dépendance externe nécessaire pour ce projet
+# Le projet utilise uniquement les bibliothèques standard de Python

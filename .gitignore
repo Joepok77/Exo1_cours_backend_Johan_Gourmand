@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+
+# Environnements virtuels
+venv/
+env/
+.venv/
+
+# Données temporaires
+*.log
+*.db
+*.sqlite3
+*.tmp
+*.bak
+.cache/
+dist/
+build/
+
+
+# VSCode / IDE
+.vscode/
+.idea/
+*.iml
+
+# Fichiers d’environnement
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

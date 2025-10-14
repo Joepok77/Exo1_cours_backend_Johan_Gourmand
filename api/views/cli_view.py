@@ -18,7 +18,7 @@ class CLIView:
         print("2. Afficher toutes les taches")
         print("3. Afficher les taches par statut")
         print("4. Modifier une tache")
-        print("5. Changer le statut d'une tache")
+        print("5. Changer le statut d'une tache") 
         print("6. Supprimer une tache")
         print("7. Quitter")
         print("=" * 50)

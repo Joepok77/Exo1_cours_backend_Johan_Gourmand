@@ -31,8 +31,8 @@ class Task:
         self.title = title
         self.description = description
         self.status = status
-        self.created_at = datetime.now()
-        self.updated_at = datetime.now()
+        """ self.created_at = datetime.now() """
+        """ self.updated_at = datetime.now() """
 
     def update_status(self, new_status: TaskStatus):
         """Met à jour le statut de la tâche"""

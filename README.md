@@ -1,6 +1,10 @@
-# ToDoList CLI - Gestionnaire de Tâches
+# ToDoList - Gestionnaire de Tâches
 
-Une application en ligne de commande (CLI) pour gérer une liste de tâches, développée en Python avec une architecture MVC et la Programmation Orientée Objet (POO).
+Une application pour gérer une liste de tâches, développée en Python avec une architecture MVC et la Programmation Orientée Objet (POO).
+
+**Deux modes disponibles :**
+- **API REST** avec Flask (pour créer des applications web/mobile)
+- **CLI** - Interface en ligne de commande
 
 ## Structure du Projet
 
@@ -42,12 +46,28 @@ conception_backend/
 git clone <url-du-repo>
 cd conception_backend
 
-# Aucune dépendance externe requise (Python 3.7+)
+# Installer les dépendances
+pip install -r requirements.txt
 ```
 
 ## Utilisation
 
-Lancer l'application:
+### Option 1: API REST (Recommandé)
+
+Lancer l'API Flask:
+
+```bash
+cd api
+python app.py
+```
+
+L'API sera disponible sur `http://localhost:5000`
+
+[Voir la documentation complète de l'API](API_USAGE.md)
+
+### Option 2: CLI
+
+Lancer l'interface en ligne de commande:
 
 ```bash
 cd api

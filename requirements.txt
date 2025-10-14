@@ -1,3 +1,10 @@
 # ToDoList CLI - Dépendances Python
 # Aucune dépendance externe nécessaire pour ce projet
 # Le projet utilise uniquement les bibliothèques standard de Python
+# Le projet utilise Flask pour l'API
+
+# ToDoList API - Dépendances Python
+flask==3.0.0
+flask-cors==4.0.0
+python-dotenv==1.0.0
+requests==2.31.0

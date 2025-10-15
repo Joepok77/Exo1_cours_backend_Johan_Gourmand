@@ -28,7 +28,9 @@ conception_backend/
 ## Installation
 
 ```bash
-cd conception_backend
+git clone https://github.com/Joepok77/Exo1_cours_backend_Johan_Gourmand.git
+
+cd Exo1_cours_backend_Johan_Gourmand
 
 # Créer un environnement virtuel
 python -m venv venv
@@ -102,11 +104,6 @@ Etes-vous sur de vouloir supprimer 'Faire les courses'? (o/n): o
 
 [OK] Tache supprimée avec succès!
 ```
-
-## Prérequis
-
-- Python 3.7 ou supérieur
-- Flask (installé via requirements.txt)
 
 ## Notes
 

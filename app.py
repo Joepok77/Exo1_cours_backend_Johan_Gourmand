@@ -40,11 +40,4 @@ def delete_task(task_id):
 
 
 if __name__ == "__main__":
-    print("\nLancement du serveur Flask...")
-    print("API disponible sur: http://localhost:5000")
-    print("Endpoints:")
-    print("   - GET    /tasks")
-    print("   - POST   /tasks")
-    print("   - DELETE /tasks/<id>")
-    print("\nAppuyez sur Ctrl+C pour arreter\n")
     app.run(debug=True, host='0.0.0.0', port=5000)

@@ -35,9 +35,26 @@ conception_backend/
 
 ```bash
 cd conception_backend
-```
 
-Aucune dépendance externe nécessaire (Python 3.7+)
+# Créer un environnement virtuel
+python -m venv venv
+
+# Activer l'environnement virtuel
+# Sur Windows:
+cd venv
+source Scripts\activate
+# Sur Linux/Mac:
+source venv/bin/activate
+
+# Installer Flask
+pip install flask
+
+# Voir les dépendances installées
+pip list
+
+# Sauvegarder les dépendances dans requirements.txt
+pip freeze et copier coller les dépendance dans requirements.txt
+```
 
 ## Utilisation
 
@@ -46,12 +63,25 @@ cd api
 python main.py
 ```
 
+Au démarrage, choisir un mode :
+- **1. Mode CLI** : Interface en ligne de commande
+- **2. Mode Flask API** : Serveur web REST API sur http://localhost:5000
+
 ## Fonctionnalités
 
+### Mode CLI
 1. **Ajouter une tâche** - Créer une nouvelle tâche avec titre et description
 2. **Afficher toutes les tâches** - Liste complète des tâches avec statut et date
 3. **Supprimer une tâche** - Retirer une tâche avec confirmation
 4. **Quitter** - Fermer l'application
+
+### Mode Flask API
+- `GET /api/health` - Vérifier que l'API fonctionne
+- `GET /api/tasks` - Récupérer toutes les tâches
+- `GET /api/tasks/<id>` - Récupérer une tâche par ID
+- `POST /api/tasks` - Créer une nouvelle tâche
+- `DELETE /api/tasks/<id>` - Supprimer une tâche
+- `PATCH /api/tasks/<id>/status` - Modifier le statut d'une tâche
 
 ## Exemple d'utilisation
 
@@ -100,10 +130,11 @@ Etes-vous sur de vouloir supprimer 'Faire les courses'? (o/n): o
 ## Prérequis
 
 - Python 3.7 ou supérieur
-- Aucune bibliothèque externe nécessaire
+- Flask 3.1.2 (installé via requirements.txt)
 
 ## Notes
 
 - Les tâches sont stockées en mémoire uniquement
 - Aucune persistance des données (pas de fichier JSON)
+- Le même controller est partagé entre CLI et Flask API
 - Projet éducatif pour apprendre MVC et POO en Python

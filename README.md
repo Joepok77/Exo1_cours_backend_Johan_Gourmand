@@ -41,19 +41,12 @@ python -m venv venv
 
 # Activer l'environnement virtuel
 # Sur Windows:
-cd venv
-source Scripts\activate
+venv\Scripts\activate
 # Sur Linux/Mac:
 source venv/bin/activate
 
-# Installer Flask
-pip install flask
-
-# Voir les dépendances installées
-pip list
-
-# Sauvegarder les dépendances dans requirements.txt
-pip freeze et copier coller les dépendance dans requirements.txt
+# Installer les dépendances
+pip install -r requirements.txt
 ```
 
 ## Utilisation
